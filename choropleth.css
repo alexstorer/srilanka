@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 100%;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.loaderbox {
+    left: 50%;
+    margin-right: -50%;
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+/* dropdown stuff */
+
+/* ul{ */
+/*   margin: 0px; */
+/*   padding: 0px; */
+/*   list-style: none; */
+/* } */
+
+/* ul.dropdown{  */
+/*   position: relative;  */
+/*   width: 100%;  */
+/* } */
+
+/* ul.dropdown li{  */
+/*   font-weight: bold;  */
+/*   float: left;  */
+/*   width: 180px;  */
+/*   position: relative; */
+/*   background: #ecf0f1; */
+/* } */
+
+/* ul.dropdown a:hover{  */
+/*   color: #000;  */
+/* } */
+
+/* ul.dropdown li a {  */
+/*   display: block;  */
+/*   padding: 20px 8px; */
+/*   color: #34495e;  */
+/*   position: relative;  */
+/*   z-index: 2000;  */
+/*   text-align: center; */
+/*   text-decoration: none; */
+/*   font-weight: 300; */
+/* } */
+
+/* ul.dropdown li a:hover, */
+/* ul.dropdown li a.hover{  */
+/*   background: #3498db; */
+/*   position: relative; */
+/*   color: #fff; */
+/* } */
+
+
+/* ul.dropdown ul{  */
+/*  display: none; */
+/*  position: absolute;  */
+/*   top: 0;  */
+/*   left: 0;  */
+/*   width: 180px;  */
+/*   z-index: 1000; */
+/* } */
+
+/* ul.dropdown ul li {  */
+/*   font-weight: normal;  */
+/*   background: #f6f6f6;  */
+/*   color: #000;  */
+/*   border-bottom: 1px solid #ccc;  */
+/* } */
+
+/* ul.dropdown ul li a{  */
+/*   display: block;  */
+/*   color: #34495e !important; */
+/*   background: #eee !important; */
+/* }  */
+
+/* ul.dropdown ul li a:hover{ */
+/*   display: block;  */
+/*   background: #3498db !important; */
+/*   color: #fff !important; */
+/* }  */
+
+/* .drop > a{ */
+/*   position: relative; */
+/* } */
+
+/* .drop > a:after{ */
+/*   content:""; */
+/*   position: absolute; */
+/*   right: 10px; */
+/*   top: 40%; */
+/*   border-left: 5px solid transparent; */
+/*   border-top: 5px solid #333; */
+/*   border-right: 5px solid transparent; */
+/*   z-index: 999; */
+/* } */
+
+/* .drop > a:hover:after{ */
+/*   content:""; */
+/*    border-left: 5px solid transparent; */
+/*   border-top: 5px solid #fff; */
+/*   border-right: 5px solid transparent; */
+/* } */
+
+/* Better Dropdown? */
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.admindisplay {
+    width: 100%;
+}
