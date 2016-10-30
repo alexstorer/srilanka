@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sri Lanka Census Map</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="choropleth.css" />
+	<link rel="stylesheet" href="lib/sidebar/leaflet-sidebar.css" />
+	<link rel="stylesheet" href="lib/mapglyphs/2.0/mapglyphs.css" />
+	<link rel="stylesheet" href="lib/dialog/Leaflet.Dialog.css" />
+
+	<style>
+	</style>
+</head>
+<body>
+    <div id="sidebar" class="sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs">
+            <ul role="tablist" id="sidebarbuttons">
+              <li class='disabled'><a href="#alldata" role="tab" class="allData"><i class="fa fa-list-ol"></i></a></li>
+              <li><a href="#vardata" role="tab" class="varData"><i class="fa fa-indent"></i></a></li>
+            </ul>
+
+            <ul role="tablist">
+                <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div class="sidebar-pane" id="home">
+                <h1 class="sidebar-header">
+                    Sri Lanka Census Data
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <h2> Select Indicator </h2>
+                <form>
+                  <div class="form-group">
+                    <label class="control-label">Indicator</label>
+                    <div id="choosetable_dep">
+                      <select class="form-control selector"></select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Variable</label>
+                    <div id="choosefields_dep">
+                      <select class="form-control fieldselector"></select>
+                    </div>
+                  </div>
+                </form>
+                <p>A responsive sidebar for mapping libraries like <a href="http://leafletjs.com/">Leaflet</a> or <a href="http://openlayers.org/">OpenLayers</a>.</p>
+            </div>
+            <div class="sidebar-pane" id="settings">
+              <h1 class="sidebar-header">Credits<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+              <h3>Designed using the following Open Source libraries:</h3>
+              <h5>
+              <ul>
+                <li>Leaflet</li>
+                <ul>
+                  <li>Leaflet Dialog</li>
+                  <li>Leaflet Sidebar</li>
+                  <li>Leaflet TopoJSON</li>
+                </ul>
+                <li>Font Awesome</li>
+                <li>Mapglyphs</li>
+                <li>Chroma</li>
+                <li>DataTables</li>
+                <li>Bootstrap</li>
+                <li>Select2</li>
+                <li>Underscore</li>
+              </ul>
+              </h5>
+              Developed by <a href="https://github.com/alexstorer/">Alex Storer</a> on contract for the World Bank.
+            </div>
+
+            <div class="sidebar-pane" id="alldata">
+              <h1 class="sidebar-header" id="alldataheader">Data for <span id="selectedregion"></span> <span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+              <div id="dataview">
+              </div>
+            </div>
+
+            <div class="sidebar-pane extrawide" id="vardata">
+              <h1 class="sidebar-header" id="vardataheader">Data for Table: <span id="selectedtable"></span> <span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+              <div id="varview">
+              </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="map" class="sidebar-map"></div>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+        <script type="text/javascript" src="lib/sidebar/jquery-sidebar.js"></script>
+        <script type="text/javascript" src="lib/sidebar/leaflet-sidebar.min.js"></script>
+        <script src="lib/topojson/topojson.v1.min.js"></script>
+        <script src="lib/leaflet/leaflet.ajax.min.js"></script>
+        <script src="lib/leaflet/L.TopoJSON.js"></script>
+	<script src="lib/jquery/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="lib/underscore/underscore-min.js"></script>
+	<link rel="stylesheet" href="lib/jquery/jquery-ui-1.10.3.custom.min.css" />
+        <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
+        <script src="lib/bootstrap/bootstrap.min.js"></script>
+        <link href="lib/select2/select2.min.css" rel="stylesheet" />
+        <script src="lib/select2/select2.min.js"></script>
+        <link rel="stylesheet" href="lib/bootstrap/bootstrap-select.min.css">
+        <script src="lib/bootstrap/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="lib/dialog/Leaflet.Dialog.js"></script>
+        <script type="text/javascript" src="lib/datatables/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="lib/datatables/jquery.dataTables.min.css">
+        <script type="text/javascript" src="lib/chroma/chroma.min.js"></script>
+	<script type="text/javascript" src="choropleth.js"></script>
+
+</body>
+</html>
