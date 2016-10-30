@@ -1,0 +1,1 @@
+cd scripts; RScript split.R; python convert_topojson.py; python convert_csv_to_json.py; python var_json.py; python convert_table_list.py; python convert_fields.py; python split_json.py; python make_summary_gnd.py; mv *.json ../../app/data; cd ..;
